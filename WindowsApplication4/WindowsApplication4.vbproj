@@ -159,6 +159,8 @@
       <DependentUpon>frmsuprProduit.vb</DependentUpon>
     </Compile>
     <Compile Include="frmsuprProduit.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="modifierGamme.designer.vb">
       <DependentUpon>modifierGamme.vb</DependentUpon>
     </Compile>
@@ -226,6 +228,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmsuprcollection.resx">
       <DependentUpon>frmsuprcollection.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="modifierGamme.resx">
       <DependentUpon>modifierGamme.vb</DependentUpon>
     </EmbeddedResource>

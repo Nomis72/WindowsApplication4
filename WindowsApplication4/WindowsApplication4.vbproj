@@ -70,10 +70,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="accueil.designer.vb">
-      <DependentUpon>accueil.vb</DependentUpon>
+    <Compile Include="accueilgamme.designer.vb">
+      <DependentUpon>accueilgamme.vb</DependentUpon>
     </Compile>
-    <Compile Include="accueil.vb">
+    <Compile Include="accueilgamme.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ajoutGamme.designer.vb">
@@ -117,6 +117,18 @@
       <DependentUpon>Form6.vb</DependentUpon>
     </Compile>
     <Compile Include="Form6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acceuil.Designer.vb">
+      <DependentUpon>acceuil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="acceuil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.vb">
+      <DependentUpon>Form7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormDeb.Designer.vb">
@@ -190,8 +202,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="accueil.resx">
-      <DependentUpon>accueil.vb</DependentUpon>
+    <EmbeddedResource Include="acceuil.resx">
+      <DependentUpon>acceuil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="accueilgamme.resx">
+      <DependentUpon>accueilgamme.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ajoutGamme.resx">
       <DependentUpon>ajoutGamme.vb</DependentUpon>
@@ -213,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form6.resx">
       <DependentUpon>Form6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDeb.resx">
       <DependentUpon>FormDeb.vb</DependentUpon>

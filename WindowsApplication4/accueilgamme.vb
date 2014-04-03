@@ -1,7 +1,7 @@
 ﻿Imports Microsoft.VisualBasic
 Imports System.Data.SqlClient
 
-Public Class accueil
+Public Class accueilgamme
 
     Private Sub accueil_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 

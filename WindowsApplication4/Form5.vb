@@ -38,29 +38,40 @@ Public Class Form5
         TextBox7.Text = JeuEnr.GetValue(0)
         Dim idpays As String
         idpays = JeuEnr.GetValue(7)
+        Dim pospays As Integer
+        Dim i As Integer
+        i = 0
         JeuEnr.Close()
 
         cmd = New SqlCommand()
         cmd.Connection = cnn
-        cmd.CommandText = "Select CodePays,Libpays from PAYS"
+        cmd.CommandText = "Select CodePays,Libpays from PAYS order by Libpays"
         JeuEnr = cmd.ExecuteReader()
+
         While JeuEnr.Read()
+
             ComboBox1.Items.Add(JeuEnr.GetValue(1))
             ComboBox2.Items.Add(JeuEnr.GetValue(0))
+            If (JeuEnr.GetValue(0) = idpays) Then
+                pospays = i
+            End If
+            i = i + 1
         End While
         JeuEnr.Close()
 
-        cmd = New SqlCommand
-        cmd.Connection = cnn
-        cmd.CommandText = "Select LibPays from PAYS where CodePays='" & idpays & "'"
-        JeuEnr = cmd.ExecuteReader
-        JeuEnr.Read()
-        Dim libpays As String
-        libpays = JeuEnr.GetValue(0)
-        JeuEnr.Close()
 
-        cnn.Close()
-        ComboBox2.SelectedItem = libpays
+
+        'cmd = New SqlCommand
+        'cmd.Connection = cnn
+        'cmd.CommandText = "Select LibPays from PAYS where CodePays='" & idpays & "'"
+        'JeuEnr = cmd.ExecuteReader
+        'JeuEnr.Read()
+        'Dim libpays As String
+        'libpays = JeuEnr.GetValue(0)
+        'JeuEnr.Close()
+        '
+        'cnn.Close()
+        ComboBox2.SelectedItem = libpays ' ComboBox2.SelectedIndex=pospays
     End Sub
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
         Dim SelIndRS As Integer

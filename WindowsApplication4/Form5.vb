@@ -18,6 +18,7 @@ Public Class Form5
     End Sub
 
     Private Sub Form5_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         Dim cnn As SqlConnection
         cnn = New SqlConnection("Data Source=172.30.0.115;Initial Catalog=OPINEL_GestionCo;User ID=SIO1; Password=SIO1MDP")
         cnn.Open()
@@ -35,7 +36,8 @@ Public Class Form5
         TextBox5.Text = JeuEnr.GetValue(6)
         TextBox6.Text = JeuEnr.GetValue(2)
         TextBox7.Text = JeuEnr.GetValue(0)
-        ComboBox2.SelectedItem = JeuEnr.GetValue(7)
+        Dim idpays As String
+        idpays = JeuEnr.GetValue(7)
         JeuEnr.Close()
 
         cmd = New SqlCommand()
@@ -46,11 +48,19 @@ Public Class Form5
             ComboBox1.Items.Add(JeuEnr.GetValue(1))
             ComboBox2.Items.Add(JeuEnr.GetValue(0))
         End While
-
-
         JeuEnr.Close()
-        cnn.Close()
 
+        cmd = New SqlCommand
+        cmd.Connection = cnn
+        cmd.CommandText = "Select LibPays from PAYS where CodePays='" & idpays & "'"
+        JeuEnr = cmd.ExecuteReader
+        JeuEnr.Read()
+        Dim libpays As String
+        libpays = JeuEnr.GetValue(0)
+        JeuEnr.Close()
+
+        cnn.Close()
+        ComboBox2.SelectedItem = libpays
     End Sub
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
         Dim SelIndRS As Integer

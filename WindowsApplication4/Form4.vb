@@ -10,11 +10,29 @@ Public Class Form4
         Dim cnn As SqlConnection
         cnn = New SqlConnection("Data Source=172.30.0.115;Initial Catalog=OPINEL_GestionCo;User ID=SIO1; Password=SIO1MDP")
         cnn.Open()
+
         Dim cmd As SqlCommand
         cmd = New SqlCommand()
         cmd.Connection = cnn
         cmd.CommandText = "Insert Into PAYS(CodePays,Libpays) Values('" & azer & "' , '" & TextBox1.Text & "') "
         cmd.ExecuteNonQuery()
+
+        Form2.ComboBox1.Items.Clear()
+
+        Dim JeuEnr As SqlDataReader
+        cmd = New SqlCommand()
+        cmd.Connection = cnn
+        cmd.CommandText = "Select Libpays from PAYS"
+        JeuEnr = cmd.ExecuteReader()
+
+        While JeuEnr.Read()
+            Form2.ComboBox1.Items.Add(JeuEnr.GetValue(0))
+        End While
+        JeuEnr.Close()
+
+        cnn.Close()
+
+
         Me.Close()
 
     End Sub

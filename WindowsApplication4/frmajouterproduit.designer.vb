@@ -31,8 +31,8 @@ Partial Class frmajouterproduit
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.cboColProd = New System.Windows.Forms.ComboBox()
+        Me.cboGamProd = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'txtACode
@@ -73,9 +73,9 @@ Partial Class frmajouterproduit
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(9, 162)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(140, 13)
+        Me.Label2.Size = New System.Drawing.Size(116, 13)
         Me.Label2.TabIndex = 9
-        Me.Label2.Text = "Descrpition de la collection :"
+        Me.Label2.Text = "Descrpition du produit :"
         '
         'txtNomC
         '
@@ -89,9 +89,9 @@ Partial Class frmajouterproduit
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(9, 129)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(103, 13)
+        Me.Label1.Size = New System.Drawing.Size(79, 13)
         Me.Label1.TabIndex = 7
-        Me.Label1.Text = "Nom de la collection"
+        Me.Label1.Text = "Nom du produit"
         '
         'Label4
         '
@@ -111,29 +111,29 @@ Partial Class frmajouterproduit
         Me.Label5.TabIndex = 15
         Me.Label5.Text = "gamme"
         '
-        'ComboBox1
+        'cboColProd
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(173, 19)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 16
+        Me.cboColProd.FormattingEnabled = True
+        Me.cboColProd.Location = New System.Drawing.Point(173, 19)
+        Me.cboColProd.Name = "cboColProd"
+        Me.cboColProd.Size = New System.Drawing.Size(121, 21)
+        Me.cboColProd.TabIndex = 16
         '
-        'ComboBox2
+        'cboGamProd
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(173, 55)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox2.TabIndex = 17
+        Me.cboGamProd.FormattingEnabled = True
+        Me.cboGamProd.Location = New System.Drawing.Point(173, 55)
+        Me.cboGamProd.Name = "cboGamProd"
+        Me.cboGamProd.Size = New System.Drawing.Size(121, 21)
+        Me.cboGamProd.TabIndex = 17
         '
         'frmajouterproduit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(503, 445)
-        Me.Controls.Add(Me.ComboBox2)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.cboGamProd)
+        Me.Controls.Add(Me.cboColProd)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.txtACode)
@@ -158,6 +158,6 @@ Partial Class frmajouterproduit
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
+    Friend WithEvents cboColProd As System.Windows.Forms.ComboBox
+    Friend WithEvents cboGamProd As System.Windows.Forms.ComboBox
 End Class

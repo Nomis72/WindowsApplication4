@@ -22,7 +22,7 @@ Public Class frmmodifcollection
         While JeuEnr.Read()
             cboModifC.Items.Add(JeuEnr.GetValue(0))
         End While
-
+        Me.Close()
     End Sub
 
 

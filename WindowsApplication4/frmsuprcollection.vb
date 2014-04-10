@@ -25,6 +25,7 @@ Public Class frmsuprcollection
 
         JeuEnr.Close()
         cnn.Close()
+        Me.Close()
     End Sub
 
     Private Sub btnSuprC_Click(sender As Object, e As EventArgs) Handles btnSuprC.Click

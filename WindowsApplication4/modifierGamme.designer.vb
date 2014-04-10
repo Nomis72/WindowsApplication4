@@ -22,8 +22,6 @@ Partial Class modifierGamme
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.richTxtDescG = New System.Windows.Forms.RichTextBox()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -31,31 +29,12 @@ Partial Class modifierGamme
         Me.txtModifG = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.cboCollG = New System.Windows.Forms.ComboBox()
-        Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
-        Me.RectangleShape1 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.SuspendLayout()
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(60, 9)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(168, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Sélectionner la gamme à modifier :"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(77, 29)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 1
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(112, 180)
+        Me.Label2.Location = New System.Drawing.Point(74, 189)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(66, 13)
         Me.Label2.TabIndex = 2
@@ -63,7 +42,7 @@ Partial Class modifierGamme
         '
         'richTxtDescG
         '
-        Me.richTxtDescG.Location = New System.Drawing.Point(32, 196)
+        Me.richTxtDescG.Location = New System.Drawing.Point(32, 205)
         Me.richTxtDescG.Name = "richTxtDescG"
         Me.richTxtDescG.Size = New System.Drawing.Size(229, 91)
         Me.richTxtDescG.TabIndex = 3
@@ -71,7 +50,7 @@ Partial Class modifierGamme
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(103, 293)
+        Me.Button1.Location = New System.Drawing.Point(103, 302)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 4
@@ -81,7 +60,7 @@ Partial Class modifierGamme
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 146)
+        Me.Label3.Location = New System.Drawing.Point(74, 166)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(84, 13)
         Me.Label3.TabIndex = 5
@@ -89,7 +68,7 @@ Partial Class modifierGamme
         '
         'txtModifG
         '
-        Me.txtModifG.Location = New System.Drawing.Point(102, 143)
+        Me.txtModifG.Location = New System.Drawing.Point(161, 159)
         Me.txtModifG.Name = "txtModifG"
         Me.txtModifG.Size = New System.Drawing.Size(100, 20)
         Me.txtModifG.TabIndex = 6
@@ -97,35 +76,19 @@ Partial Class modifierGamme
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(82, 96)
+        Me.Label4.Location = New System.Drawing.Point(74, 116)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(116, 13)
+        Me.Label4.Size = New System.Drawing.Size(120, 13)
         Me.Label4.TabIndex = 7
-        Me.Label4.Text = "Changer de collection :"
+        Me.Label4.Text = "Sélectionner collection :"
         '
         'cboCollG
         '
         Me.cboCollG.FormattingEnabled = True
-        Me.cboCollG.Location = New System.Drawing.Point(77, 112)
+        Me.cboCollG.Location = New System.Drawing.Point(115, 132)
         Me.cboCollG.Name = "cboCollG"
         Me.cboCollG.Size = New System.Drawing.Size(121, 21)
         Me.cboCollG.TabIndex = 8
-        '
-        'ShapeContainer1
-        '
-        Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
-        Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
-        Me.ShapeContainer1.Name = "ShapeContainer1"
-        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(318, 328)
-        Me.ShapeContainer1.TabIndex = 9
-        Me.ShapeContainer1.TabStop = False
-        '
-        'RectangleShape1
-        '
-        Me.RectangleShape1.Location = New System.Drawing.Point(-20, 61)
-        Me.RectangleShape1.Name = "RectangleShape1"
-        Me.RectangleShape1.Size = New System.Drawing.Size(384, 2)
         '
         'modifierGamme
         '
@@ -139,17 +102,12 @@ Partial Class modifierGamme
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.richTxtDescG)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.ShapeContainer1)
         Me.Name = "modifierGamme"
         Me.Text = "modifierGamme"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents richTxtDescG As System.Windows.Forms.RichTextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
@@ -157,6 +115,4 @@ Partial Class modifierGamme
     Friend WithEvents txtModifG As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents cboCollG As System.Windows.Forms.ComboBox
-    Friend WithEvents ShapeContainer1 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
-    Friend WithEvents RectangleShape1 As Microsoft.VisualBasic.PowerPacks.RectangleShape
 End Class

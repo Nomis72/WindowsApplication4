@@ -7,11 +7,11 @@ Public Class modifierGamme
     Dim cnn As SqlConnection
 
     Private Sub modifierGamme_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+            Dim cnn As SqlConnection
 
-        Dim connectionString As String
 
-        connectionString = " Data Source=172.30.0.115;Initial Catalog=OPINEL_GestionCo; User ID=SIO1;Password=SIO1MDP"
-        cnn = New SqlConnection(connectionString)
+        cnn = New SqlConnection("Data Source=172.30.0.115;Initial Catalog=OPINEL_GestionCo; User ID=SIO1;Password=SIO1MDP")
+
         cnn.Open()
 
         Dim cmd As SqlCommand
@@ -21,17 +21,12 @@ Public Class modifierGamme
 
         Dim JeuEnr As SqlDataReader
 
-        connectionString = " Data Source=172.30.0.115;Initial Catalog=OPINEL_GestionCo; User ID=SIO1;Password=SIO1MDP"
-        cnn = New SqlConnection(connectionString)
-        cnn.Open()
-        cmd = New SqlCommand()
-        cmd.Connection = cnn
 
-        cmd.CommandText = "Select libGamme from GAMME"
+        cmd.CommandText = "Select * from GAMME where libgamme = '" & modifGamme.ComboBox1.SelectedItem & "'"
         JeuEnr = cmd.ExecuteReader()
 
         While JeuEnr.Read()
-            ComboBox1.Items.Add(JeuEnr.GetValue(0))
+
         End While
 
     End Sub

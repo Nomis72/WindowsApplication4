@@ -2,9 +2,7 @@
 Imports Microsoft.VisualBasic
 
 Public Class Form5
-<<<<<<< HEAD
-    '
-=======
+
 
     Private Sub Button1_Click(sender As Object, e As EventArgs)
         Dim cnn As SqlConnection
@@ -19,7 +17,7 @@ Public Class Form5
         Me.Close()
 
     End Sub
->>>>>>> f1fa87da4d52634e4a057277aab63d8e5c9872ad
+
 
     Private Sub Button1_Click(sender As Object, e As EventArgs)
         Dim cnn As SqlConnection

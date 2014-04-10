@@ -31,6 +31,8 @@ Partial Class modifierGamme
         Me.txtModifG = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.cboCollG = New System.Windows.Forms.ComboBox()
+        Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
+        Me.RectangleShape1 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.SuspendLayout()
         '
         'Label1
@@ -79,7 +81,7 @@ Partial Class modifierGamme
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(2, 120)
+        Me.Label3.Location = New System.Drawing.Point(12, 146)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(84, 13)
         Me.Label3.TabIndex = 5
@@ -87,7 +89,7 @@ Partial Class modifierGamme
         '
         'txtModifG
         '
-        Me.txtModifG.Location = New System.Drawing.Point(115, 120)
+        Me.txtModifG.Location = New System.Drawing.Point(102, 143)
         Me.txtModifG.Name = "txtModifG"
         Me.txtModifG.Size = New System.Drawing.Size(100, 20)
         Me.txtModifG.TabIndex = 6
@@ -95,7 +97,7 @@ Partial Class modifierGamme
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(82, 53)
+        Me.Label4.Location = New System.Drawing.Point(82, 96)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(116, 13)
         Me.Label4.TabIndex = 7
@@ -104,10 +106,26 @@ Partial Class modifierGamme
         'cboCollG
         '
         Me.cboCollG.FormattingEnabled = True
-        Me.cboCollG.Location = New System.Drawing.Point(77, 69)
+        Me.cboCollG.Location = New System.Drawing.Point(77, 112)
         Me.cboCollG.Name = "cboCollG"
         Me.cboCollG.Size = New System.Drawing.Size(121, 21)
         Me.cboCollG.TabIndex = 8
+        '
+        'ShapeContainer1
+        '
+        Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
+        Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
+        Me.ShapeContainer1.Name = "ShapeContainer1"
+        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape1})
+        Me.ShapeContainer1.Size = New System.Drawing.Size(318, 328)
+        Me.ShapeContainer1.TabIndex = 9
+        Me.ShapeContainer1.TabStop = False
+        '
+        'RectangleShape1
+        '
+        Me.RectangleShape1.Location = New System.Drawing.Point(-20, 61)
+        Me.RectangleShape1.Name = "RectangleShape1"
+        Me.RectangleShape1.Size = New System.Drawing.Size(384, 2)
         '
         'modifierGamme
         '
@@ -123,6 +141,7 @@ Partial Class modifierGamme
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.ShapeContainer1)
         Me.Name = "modifierGamme"
         Me.Text = "modifierGamme"
         Me.ResumeLayout(False)
@@ -138,4 +157,6 @@ Partial Class modifierGamme
     Friend WithEvents txtModifG As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents cboCollG As System.Windows.Forms.ComboBox
+    Friend WithEvents ShapeContainer1 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
+    Friend WithEvents RectangleShape1 As Microsoft.VisualBasic.PowerPacks.RectangleShape
 End Class

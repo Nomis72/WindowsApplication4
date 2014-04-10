@@ -21,6 +21,21 @@ Public Class Form5
     End Sub
 >>>>>>> f1fa87da4d52634e4a057277aab63d8e5c9872ad
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
+        Dim cnn As SqlConnection
+        cnn = New SqlConnection("Data Source=172.30.0.115;Initial Catalog=OPINEL_GestionCo;User ID=SIO1; Password=SIO1MDP")
+        cnn.Open()
+        Dim cmd As SqlCommand
+        cmd = New SqlCommand()
+        cmd.Connection = cnn
+        cmd.CommandText = " update ENTREPRISE set RaisonSociale = '" & TextBox1.Text & "',AdresseRue = '" & TextBox6.Text & "',CodePostal = '" & TextBox2.Text & "', Ville = '" & TextBox3.Text & "',TelStandard = '" & TextBox4.Text & "',Mail = '" & TextBox5.Text & "',CodePays = '" & ComboBox2.SelectedItem & "' where idEntreprise = " & TextBox7.Text & ""
+        cmd.ExecuteNonQuery()
+        Form3.Visible = True
+        Me.Close()
+
+    End Sub
+
+
     Private Sub Form5_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Dim cnn As SqlConnection

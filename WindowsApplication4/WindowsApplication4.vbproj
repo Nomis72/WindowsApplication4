@@ -260,6 +260,9 @@
     <EmbeddedResource Include="frmLesProds.resx">
       <DependentUpon>frmLesProds.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmmodifproduit.resx">
+      <DependentUpon>frmmodifproduit.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="modifclient.resx">
       <DependentUpon>modifclient.vb</DependentUpon>
     </EmbeddedResource>

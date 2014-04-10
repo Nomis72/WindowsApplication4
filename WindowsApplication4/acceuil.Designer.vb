@@ -52,7 +52,7 @@ Partial Class acceuil
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Name = "acceuil"
-        Me.Text = "Form7"
+        Me.Text = "accueil"
         Me.ResumeLayout(False)
 
     End Sub

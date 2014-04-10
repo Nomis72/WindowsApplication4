@@ -138,6 +138,13 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormDeb.designer.vb">
+    <Compile Include="modifclient.Designer.vb">
+      <DependentUpon>modifclient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="modifclient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeb.Designer.vb">
       <DependentUpon>FormDeb.vb</DependentUpon>
     </Compile>
     <Compile Include="FormDeb.vb">
@@ -240,6 +247,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLesProds.resx">
       <DependentUpon>frmLesProds.vb</DependentUpon>
+    <EmbeddedResource Include="modifclient.resx">
+      <DependentUpon>modifclient.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDeb.resx">
       <DependentUpon>FormDeb.vb</DependentUpon>

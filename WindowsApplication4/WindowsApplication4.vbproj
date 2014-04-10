@@ -138,6 +138,12 @@
     <Compile Include="azert.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmLesProds.Designer.vb">
+      <DependentUpon>frmLesProds.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLesProds.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="modifclient.Designer.vb">
       <DependentUpon>modifclient.vb</DependentUpon>
     </Compile>
@@ -244,6 +250,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="acceuilcatalogue.resx">
       <DependentUpon>acceuilcatalogue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLesProds.resx">
+      <DependentUpon>frmLesProds.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modifclient.resx">
       <DependentUpon>modifclient.vb</DependentUpon>

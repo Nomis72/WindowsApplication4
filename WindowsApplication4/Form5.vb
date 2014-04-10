@@ -71,7 +71,7 @@ Public Class Form5
         'JeuEnr.Close()
         '
         'cnn.Close()
-        ComboBox2.SelectedItem = libpays ' ComboBox2.SelectedIndex=pospays
+        ' ComboBox2.SelectedIndex=pospays
     End Sub
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
         Dim SelIndRS As Integer

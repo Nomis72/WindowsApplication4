@@ -2,7 +2,24 @@
 Imports Microsoft.VisualBasic
 
 Public Class Form5
+<<<<<<< HEAD
     '
+=======
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
+        Dim cnn As SqlConnection
+        cnn = New SqlConnection("Data Source=172.30.0.115;Initial Catalog=OPINEL_GestionCo;User ID=SIO1; Password=SIO1MDP")
+        cnn.Open()
+        Dim cmd As SqlCommand
+        cmd = New SqlCommand()
+        cmd.Connection = cnn
+        cmd.CommandText = " update ENTREPRISE set RaisonSociale = '" & TextBox1.Text & "',AdresseRue = '" & TextBox6.Text & "',CodePostal = '" & TextBox2.Text & "', Ville = '" & TextBox3.Text & "',TelStandard = '" & TextBox4.Text & "',Mail = '" & TextBox5.Text & "',CodePays = '" & ComboBox2.SelectedItem & "' where idEntreprise = " & TextBox7.Text & ""
+        cmd.ExecuteNonQuery()
+        Form3.Visible = True
+        Me.Close()
+
+    End Sub
+>>>>>>> f1fa87da4d52634e4a057277aab63d8e5c9872ad
 
     Private Sub Form5_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -23,10 +40,8 @@ Public Class Form5
         TextBox5.Text = JeuEnr.GetValue(6)
         TextBox6.Text = JeuEnr.GetValue(2)
         TextBox7.Text = JeuEnr.GetValue(0)
-
         Dim idpays As String
         idpays = JeuEnr.GetValue(7)
-
         Dim pospays As Integer
         Dim i As Integer
         i = 0
@@ -47,9 +62,20 @@ Public Class Form5
             i = i + 1
         End While
         JeuEnr.Close()
-        ComboBox1.SelectedIndex = pospays
-        cnn.Close()
 
+
+
+        'cmd = New SqlCommand
+        'cmd.Connection = cnn
+        'cmd.CommandText = "Select LibPays from PAYS where CodePays='" & idpays & "'"
+        'JeuEnr = cmd.ExecuteReader
+        'JeuEnr.Read()
+        'Dim libpays As String
+        'libpays = JeuEnr.GetValue(0)
+        'JeuEnr.Close()
+        '
+        'cnn.Close()
+        ' ComboBox2.SelectedIndex=pospays
     End Sub
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
         Dim SelIndRS As Integer
@@ -57,16 +83,4 @@ Public Class Form5
         ComboBox2.SelectedIndex = SelIndRS
     End Sub
 
-    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim cnn As SqlConnection
-        cnn = New SqlConnection("Data Source=172.30.0.115;Initial Catalog=OPINEL_GestionCo;User ID=SIO1; Password=SIO1MDP")
-        cnn.Open()
-        Dim cmd As SqlCommand
-        cmd = New SqlCommand()
-        cmd.Connection = cnn
-        cmd.CommandText = " update ENTREPRISE set RaisonSociale = '" & TextBox1.Text & "',AdresseRue = '" & TextBox6.Text & "',CodePostal = '" & TextBox2.Text & "', Ville = '" & TextBox3.Text & "',TelStandard = '" & TextBox4.Text & "',Mail = '" & TextBox5.Text & "',CodePays = '" & ComboBox2.SelectedItem & "' where idEntreprise = " & TextBox7.Text & ""
-        cmd.ExecuteNonQuery()
-        Form3.Visible = True
-        Me.Close()
-    End Sub
 End Class

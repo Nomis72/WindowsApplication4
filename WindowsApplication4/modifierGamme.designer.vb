@@ -31,8 +31,6 @@ Partial Class modifierGamme
         Me.txtModifG = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.cboCollG = New System.Windows.Forms.ComboBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.TxtidG = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -81,7 +79,7 @@ Partial Class modifierGamme
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 160)
+        Me.Label3.Location = New System.Drawing.Point(2, 120)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(84, 13)
         Me.Label3.TabIndex = 5
@@ -89,7 +87,7 @@ Partial Class modifierGamme
         '
         'txtModifG
         '
-        Me.txtModifG.Location = New System.Drawing.Point(128, 157)
+        Me.txtModifG.Location = New System.Drawing.Point(115, 120)
         Me.txtModifG.Name = "txtModifG"
         Me.txtModifG.Size = New System.Drawing.Size(100, 20)
         Me.txtModifG.TabIndex = 6
@@ -111,29 +109,11 @@ Partial Class modifierGamme
         Me.cboCollG.Size = New System.Drawing.Size(121, 21)
         Me.cboCollG.TabIndex = 8
         '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(74, 93)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(131, 13)
-        Me.Label5.TabIndex = 9
-        Me.Label5.Text = "Changer l'id de la gamme :"
-        '
-        'TxtidG
-        '
-        Me.TxtidG.Location = New System.Drawing.Point(85, 119)
-        Me.TxtidG.Name = "TxtidG"
-        Me.TxtidG.Size = New System.Drawing.Size(100, 20)
-        Me.TxtidG.TabIndex = 10
-        '
         'modifierGamme
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(318, 328)
-        Me.Controls.Add(Me.TxtidG)
-        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.cboCollG)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.txtModifG)
@@ -158,6 +138,4 @@ Partial Class modifierGamme
     Friend WithEvents txtModifG As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents cboCollG As System.Windows.Forms.ComboBox
-    Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents TxtidG As System.Windows.Forms.TextBox
 End Class

@@ -207,6 +207,12 @@
     <Compile Include="frmsuprProduit.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="modifGamme.Designer.vb">
+      <DependentUpon>modifGamme.vb</DependentUpon>
+    </Compile>
+    <Compile Include="modifGamme.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="modifierGamme.designer.vb">
       <DependentUpon>modifierGamme.vb</DependentUpon>
     </Compile>
@@ -292,6 +298,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmsuprcollection.resx">
       <DependentUpon>frmsuprcollection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifGamme.resx">
+      <DependentUpon>modifGamme.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modifierGamme.resx">
       <DependentUpon>modifierGamme.vb</DependentUpon>

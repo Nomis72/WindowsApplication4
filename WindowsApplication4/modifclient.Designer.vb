@@ -22,6 +22,7 @@ Partial Class modifclient
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(modifclient))
         Me.Button2 = New System.Windows.Forms.Button()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -183,10 +184,11 @@ Partial Class modifclient
         Me.Button1.Text = "Ajouter le contact"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Form7
+        'modifclient
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(292, 273)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.ComboBox3)
@@ -205,7 +207,7 @@ Partial Class modifclient
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button1)
-        Me.Name = "Form7"
+        Me.Name = "modifclient"
         Me.Text = "Form7"
         Me.ResumeLayout(False)
         Me.PerformLayout()

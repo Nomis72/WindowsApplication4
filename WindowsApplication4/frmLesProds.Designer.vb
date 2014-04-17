@@ -22,6 +22,7 @@ Partial Class frmLesProds
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmLesProds))
         Me.btnajouterprod = New System.Windows.Forms.Button()
         Me.btnmodifierprod = New System.Windows.Forms.Button()
         Me.btnSuprProd = New System.Windows.Forms.Button()
@@ -29,27 +30,27 @@ Partial Class frmLesProds
         '
         'btnajouterprod
         '
-        Me.btnajouterprod.Location = New System.Drawing.Point(31, 45)
+        Me.btnajouterprod.Location = New System.Drawing.Point(12, 12)
         Me.btnajouterprod.Name = "btnajouterprod"
-        Me.btnajouterprod.Size = New System.Drawing.Size(75, 23)
+        Me.btnajouterprod.Size = New System.Drawing.Size(260, 23)
         Me.btnajouterprod.TabIndex = 0
         Me.btnajouterprod.Text = "ajouter"
         Me.btnajouterprod.UseVisualStyleBackColor = True
         '
         'btnmodifierprod
         '
-        Me.btnmodifierprod.Location = New System.Drawing.Point(136, 45)
+        Me.btnmodifierprod.Location = New System.Drawing.Point(12, 41)
         Me.btnmodifierprod.Name = "btnmodifierprod"
-        Me.btnmodifierprod.Size = New System.Drawing.Size(75, 23)
+        Me.btnmodifierprod.Size = New System.Drawing.Size(260, 23)
         Me.btnmodifierprod.TabIndex = 1
         Me.btnmodifierprod.Text = "modifier"
         Me.btnmodifierprod.UseVisualStyleBackColor = True
         '
         'btnSuprProd
         '
-        Me.btnSuprProd.Location = New System.Drawing.Point(86, 89)
+        Me.btnSuprProd.Location = New System.Drawing.Point(12, 70)
         Me.btnSuprProd.Name = "btnSuprProd"
-        Me.btnSuprProd.Size = New System.Drawing.Size(75, 23)
+        Me.btnSuprProd.Size = New System.Drawing.Size(260, 23)
         Me.btnSuprProd.TabIndex = 2
         Me.btnSuprProd.Text = "suprimmer"
         Me.btnSuprProd.UseVisualStyleBackColor = True
@@ -58,7 +59,8 @@ Partial Class frmLesProds
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(284, 100)
         Me.Controls.Add(Me.btnSuprProd)
         Me.Controls.Add(Me.btnmodifierprod)
         Me.Controls.Add(Me.btnajouterprod)

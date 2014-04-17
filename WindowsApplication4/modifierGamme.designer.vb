@@ -22,6 +22,7 @@ Partial Class modifierGamme
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(modifierGamme))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -38,7 +39,7 @@ Partial Class modifierGamme
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(60, 9)
+        Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(168, 13)
         Me.Label1.TabIndex = 0
@@ -47,15 +48,15 @@ Partial Class modifierGamme
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(77, 29)
+        Me.ComboBox1.Location = New System.Drawing.Point(15, 25)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(291, 21)
         Me.ComboBox1.TabIndex = 1
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(112, 180)
+        Me.Label2.Location = New System.Drawing.Point(12, 152)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(66, 13)
         Me.Label2.TabIndex = 2
@@ -63,17 +64,17 @@ Partial Class modifierGamme
         '
         'richTxtDescG
         '
-        Me.richTxtDescG.Location = New System.Drawing.Point(32, 196)
+        Me.richTxtDescG.Location = New System.Drawing.Point(15, 168)
         Me.richTxtDescG.Name = "richTxtDescG"
-        Me.richTxtDescG.Size = New System.Drawing.Size(229, 91)
+        Me.richTxtDescG.Size = New System.Drawing.Size(291, 91)
         Me.richTxtDescG.TabIndex = 3
         Me.richTxtDescG.Text = ""
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(103, 293)
+        Me.Button1.Location = New System.Drawing.Point(15, 265)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(291, 23)
         Me.Button1.TabIndex = 4
         Me.Button1.Text = "Valider"
         Me.Button1.UseVisualStyleBackColor = True
@@ -81,7 +82,7 @@ Partial Class modifierGamme
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 146)
+        Me.Label3.Location = New System.Drawing.Point(12, 113)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(84, 13)
         Me.Label3.TabIndex = 5
@@ -89,15 +90,15 @@ Partial Class modifierGamme
         '
         'txtModifG
         '
-        Me.txtModifG.Location = New System.Drawing.Point(102, 143)
+        Me.txtModifG.Location = New System.Drawing.Point(15, 129)
         Me.txtModifG.Name = "txtModifG"
-        Me.txtModifG.Size = New System.Drawing.Size(100, 20)
+        Me.txtModifG.Size = New System.Drawing.Size(291, 20)
         Me.txtModifG.TabIndex = 6
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(82, 96)
+        Me.Label4.Location = New System.Drawing.Point(12, 73)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(116, 13)
         Me.Label4.TabIndex = 7
@@ -106,9 +107,9 @@ Partial Class modifierGamme
         'cboCollG
         '
         Me.cboCollG.FormattingEnabled = True
-        Me.cboCollG.Location = New System.Drawing.Point(77, 112)
+        Me.cboCollG.Location = New System.Drawing.Point(15, 89)
         Me.cboCollG.Name = "cboCollG"
-        Me.cboCollG.Size = New System.Drawing.Size(121, 21)
+        Me.cboCollG.Size = New System.Drawing.Size(291, 21)
         Me.cboCollG.TabIndex = 8
         '
         'ShapeContainer1
@@ -117,7 +118,7 @@ Partial Class modifierGamme
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
         Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(318, 328)
+        Me.ShapeContainer1.Size = New System.Drawing.Size(318, 298)
         Me.ShapeContainer1.TabIndex = 9
         Me.ShapeContainer1.TabStop = False
         '
@@ -131,7 +132,8 @@ Partial Class modifierGamme
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(318, 328)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(318, 298)
         Me.Controls.Add(Me.cboCollG)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.txtModifG)

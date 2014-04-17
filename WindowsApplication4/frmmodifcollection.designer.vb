@@ -22,6 +22,7 @@ Partial Class frmmodifcollection
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmmodifcollection))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.cboModifC = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -34,7 +35,7 @@ Partial Class frmmodifcollection
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 29)
+        Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(149, 13)
         Me.Label1.TabIndex = 0
@@ -43,15 +44,15 @@ Partial Class frmmodifcollection
         'cboModifC
         '
         Me.cboModifC.FormattingEnabled = True
-        Me.cboModifC.Location = New System.Drawing.Point(167, 26)
+        Me.cboModifC.Location = New System.Drawing.Point(15, 25)
         Me.cboModifC.Name = "cboModifC"
-        Me.cboModifC.Size = New System.Drawing.Size(105, 21)
+        Me.cboModifC.Size = New System.Drawing.Size(310, 21)
         Me.cboModifC.TabIndex = 1
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(12, 121)
+        Me.Label2.Location = New System.Drawing.Point(9, 88)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(58, 13)
         Me.Label2.TabIndex = 2
@@ -59,32 +60,32 @@ Partial Class frmmodifcollection
         '
         'txtMdesc
         '
-        Me.txtMdesc.Location = New System.Drawing.Point(15, 153)
+        Me.txtMdesc.Location = New System.Drawing.Point(12, 104)
         Me.txtMdesc.Multiline = True
         Me.txtMdesc.Name = "txtMdesc"
-        Me.txtMdesc.Size = New System.Drawing.Size(236, 114)
+        Me.txtMdesc.Size = New System.Drawing.Size(313, 114)
         Me.txtMdesc.TabIndex = 3
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(49, 282)
+        Me.Button1.Location = New System.Drawing.Point(12, 224)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(160, 37)
+        Me.Button1.Size = New System.Drawing.Size(313, 37)
         Me.Button1.TabIndex = 4
         Me.Button1.Text = "modifier"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'txtMcode
         '
-        Me.txtMcode.Location = New System.Drawing.Point(167, 70)
+        Me.txtMcode.Location = New System.Drawing.Point(12, 65)
         Me.txtMcode.Name = "txtMcode"
-        Me.txtMcode.Size = New System.Drawing.Size(105, 20)
+        Me.txtMcode.Size = New System.Drawing.Size(313, 20)
         Me.txtMcode.TabIndex = 5
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 73)
+        Me.Label3.Location = New System.Drawing.Point(12, 49)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(81, 13)
         Me.Label3.TabIndex = 6
@@ -94,7 +95,8 @@ Partial Class frmmodifcollection
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(337, 335)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(337, 274)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.txtMcode)
         Me.Controls.Add(Me.Button1)

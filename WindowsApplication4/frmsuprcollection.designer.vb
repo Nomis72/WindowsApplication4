@@ -22,6 +22,7 @@ Partial Class frmsuprcollection
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmsuprcollection))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.cboSuprC = New System.Windows.Forms.ComboBox()
         Me.btnSuprC = New System.Windows.Forms.Button()
@@ -46,7 +47,7 @@ Partial Class frmsuprcollection
         '
         'btnSuprC
         '
-        Me.btnSuprC.Location = New System.Drawing.Point(77, 110)
+        Me.btnSuprC.Location = New System.Drawing.Point(72, 62)
         Me.btnSuprC.Name = "btnSuprC"
         Me.btnSuprC.Size = New System.Drawing.Size(132, 55)
         Me.btnSuprC.TabIndex = 2
@@ -57,7 +58,8 @@ Partial Class frmsuprcollection
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(284, 133)
         Me.Controls.Add(Me.btnSuprC)
         Me.Controls.Add(Me.cboSuprC)
         Me.Controls.Add(Me.Label1)

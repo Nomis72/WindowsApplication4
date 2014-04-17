@@ -25,7 +25,7 @@ Public Class FormDeb
         frmsuprcollection.Show()
     End Sub
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles btnSProd.Click
+    Private Sub Button6_Click(sender As Object, e As EventArgs)
 
     End Sub
 End Class

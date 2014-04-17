@@ -22,6 +22,7 @@ Partial Class ajoutGamme
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ajoutGamme))
         Me.nomGamme = New System.Windows.Forms.Label()
         Me.txtNomG = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -34,7 +35,7 @@ Partial Class ajoutGamme
         'nomGamme
         '
         Me.nomGamme.AutoSize = True
-        Me.nomGamme.Location = New System.Drawing.Point(71, 90)
+        Me.nomGamme.Location = New System.Drawing.Point(9, 49)
         Me.nomGamme.Name = "nomGamme"
         Me.nomGamme.Size = New System.Drawing.Size(141, 13)
         Me.nomGamme.TabIndex = 0
@@ -42,15 +43,15 @@ Partial Class ajoutGamme
         '
         'txtNomG
         '
-        Me.txtNomG.Location = New System.Drawing.Point(88, 106)
+        Me.txtNomG.Location = New System.Drawing.Point(12, 65)
         Me.txtNomG.Name = "txtNomG"
-        Me.txtNomG.Size = New System.Drawing.Size(100, 20)
+        Me.txtNomG.Size = New System.Drawing.Size(268, 20)
         Me.txtNomG.TabIndex = 1
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(110, 129)
+        Me.Label1.Location = New System.Drawing.Point(9, 88)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(66, 13)
         Me.Label1.TabIndex = 2
@@ -58,17 +59,17 @@ Partial Class ajoutGamme
         '
         'txtDescG
         '
-        Me.txtDescG.Location = New System.Drawing.Point(27, 145)
+        Me.txtDescG.Location = New System.Drawing.Point(12, 104)
         Me.txtDescG.Name = "txtDescG"
-        Me.txtDescG.Size = New System.Drawing.Size(231, 96)
+        Me.txtDescG.Size = New System.Drawing.Size(268, 96)
         Me.txtDescG.TabIndex = 3
         Me.txtDescG.Text = ""
         '
         'button1
         '
-        Me.button1.Location = New System.Drawing.Point(113, 247)
+        Me.button1.Location = New System.Drawing.Point(12, 206)
         Me.button1.Name = "button1"
-        Me.button1.Size = New System.Drawing.Size(75, 23)
+        Me.button1.Size = New System.Drawing.Size(268, 23)
         Me.button1.TabIndex = 4
         Me.button1.Text = "Valider"
         Me.button1.UseVisualStyleBackColor = True
@@ -76,7 +77,7 @@ Partial Class ajoutGamme
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(71, 9)
+        Me.Label2.Location = New System.Drawing.Point(12, 9)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(141, 13)
         Me.Label2.TabIndex = 5
@@ -85,16 +86,17 @@ Partial Class ajoutGamme
         'cboCollection
         '
         Me.cboCollection.FormattingEnabled = True
-        Me.cboCollection.Location = New System.Drawing.Point(88, 25)
+        Me.cboCollection.Location = New System.Drawing.Point(12, 25)
         Me.cboCollection.Name = "cboCollection"
-        Me.cboCollection.Size = New System.Drawing.Size(112, 21)
+        Me.cboCollection.Size = New System.Drawing.Size(268, 21)
         Me.cboCollection.TabIndex = 6
         '
         'ajoutGamme
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(292, 273)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(292, 238)
         Me.Controls.Add(Me.cboCollection)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.button1)

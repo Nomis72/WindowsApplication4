@@ -22,6 +22,7 @@ Partial Class frmajoutercollection
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmajoutercollection))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtNomC = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -34,7 +35,7 @@ Partial Class frmajoutercollection
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(13, 49)
+        Me.Label1.Location = New System.Drawing.Point(12, 48)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(103, 13)
         Me.Label1.TabIndex = 0
@@ -42,15 +43,15 @@ Partial Class frmajoutercollection
         '
         'txtNomC
         '
-        Me.txtNomC.Location = New System.Drawing.Point(177, 42)
+        Me.txtNomC.Location = New System.Drawing.Point(15, 63)
         Me.txtNomC.Name = "txtNomC"
-        Me.txtNomC.Size = New System.Drawing.Size(100, 20)
+        Me.txtNomC.Size = New System.Drawing.Size(304, 20)
         Me.txtNomC.TabIndex = 1
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(13, 86)
+        Me.Label2.Location = New System.Drawing.Point(12, 86)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(140, 13)
         Me.Label2.TabIndex = 2
@@ -58,17 +59,17 @@ Partial Class frmajoutercollection
         '
         'txtDescC
         '
-        Me.txtDescC.Location = New System.Drawing.Point(16, 118)
+        Me.txtDescC.Location = New System.Drawing.Point(15, 102)
         Me.txtDescC.Multiline = True
         Me.txtDescC.Name = "txtDescC"
-        Me.txtDescC.Size = New System.Drawing.Size(299, 128)
+        Me.txtDescC.Size = New System.Drawing.Size(304, 128)
         Me.txtDescC.TabIndex = 3
         '
         'btnAjoutG
         '
-        Me.btnAjoutG.Location = New System.Drawing.Point(101, 252)
+        Me.btnAjoutG.Location = New System.Drawing.Point(15, 236)
         Me.btnAjoutG.Name = "btnAjoutG"
-        Me.btnAjoutG.Size = New System.Drawing.Size(143, 47)
+        Me.btnAjoutG.Size = New System.Drawing.Size(304, 47)
         Me.btnAjoutG.TabIndex = 4
         Me.btnAjoutG.Text = "Valider"
         Me.btnAjoutG.UseVisualStyleBackColor = True
@@ -76,7 +77,7 @@ Partial Class frmajoutercollection
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(13, 18)
+        Me.Label3.Location = New System.Drawing.Point(12, 9)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(76, 13)
         Me.Label3.TabIndex = 5
@@ -84,16 +85,17 @@ Partial Class frmajoutercollection
         '
         'txtACode
         '
-        Me.txtACode.Location = New System.Drawing.Point(177, 11)
+        Me.txtACode.Location = New System.Drawing.Point(15, 25)
         Me.txtACode.Name = "txtACode"
-        Me.txtACode.Size = New System.Drawing.Size(100, 20)
+        Me.txtACode.Size = New System.Drawing.Size(304, 20)
         Me.txtACode.TabIndex = 6
         '
         'frmajoutercollection
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(366, 311)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(331, 311)
         Me.Controls.Add(Me.txtACode)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.btnAjoutG)
